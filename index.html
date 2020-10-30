@@ -139,12 +139,6 @@ span.ref { font-weight:bold; }
 <div id='rolographic' title='developped by rolographic'><img src='./rolographic.png'/></div>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
 <script type='text/javascript'>
-// <![CDATA[
-
-// <link type="text/css" rel="stylesheet" href="base.css">
-// <link type="text/css" rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
-// <link type="text/css" rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
-
 var App = {}
 
 App.CurrentLang = 'en';
@@ -160,53 +154,53 @@ App.Menus = {
 }
 
 App.Pictures = {
-	CON : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUX60QUII/AAAAAAAAANc/Em6hk66AVQ8/contact.jpg' },
-	PRO : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TZt0DgjB_MI/AAAAAAAAAS8/dk51mMmaiL8/profile.jpg', text:'photo : adam von mack' },
-	SPL : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUXZcRZbI/AAAAAAAAANY/0B2KlB4Mb0U/splash.jpg' },
-	HOT_MI_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSze2y-AXeI/AAAAAAAAAQs/mMH9JSowXxA/MI_1.jpg' },
-	HOT_MI_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSze2txvqqI/AAAAAAAAAQo/re-FgNvwVKs/MI_2.jpg' },
-	HOT_MI_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSze3bsFjUI/AAAAAAAAAQw/9zX19uuRvsc/MI_3.jpg' },
-	HOT_MU_1 : { url:'http://lh4.ggpht.com/-tGjRdk0SLRc/T0QglU2STjI/AAAAAAAAApg/zV1V5fFCAdo/MU_1.jpg' },
-	HOT_MU_2 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUnSEb3AI/AAAAAAAAAPs/0StO5c-5F44/MU_2.jpg' },
-	HOT_HK_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSziz-xA81I/AAAAAAAAARI/yOfkguz3-n0/HK_1.jpg', text:'photo : michel weber' },
-	HOT_HK_2 : { url:'http://lh6.ggpht.com/-sdnU3P23tGM/T0QgOQr8opI/AAAAAAAAApE/UdBTjNBq8aI/HK_2.jpg', text:'photo : michel weber' },
-	HOT_HK_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSziCWOhEAI/AAAAAAAAARA/xsYTAjDm8pA/HK_3.jpg', text:'photo : michel weber' },
-	HOT_HK_4 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUeLb_DuI/AAAAAAAAAOg/2YN3Krmxa94/HK_4.jpg', text:'photo : michel weber' },
-	HOT_HK_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUcveMRFI/AAAAAAAAAOQ/KIFJX7oTpDo/HK_5.jpg', text:'photo : michel weber' },
-	OFF_DO_1 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUaesA8FI/AAAAAAAAAN4/HNSj3OnfmYs/DO_1.jpg', text:'persp : vincent castell' },
-	OFF_DO_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUZjLvVQI/AAAAAAAAANw/gKCJklrhssA/DO_2.jpg', text:'persp : vincent castell' },
-	OFF_DO_3 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUaF8r_9I/AAAAAAAAAN0/B11IqmveXmA/DO_3.jpg', text:'persp : vincent castell' },
-	RES_DU_1 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUblAwjeI/AAAAAAAAAOE/7AuXTixyUaw/DU_1.jpg', text:'persp : vincent castell' },
-	RES_DU_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUbypKgwI/AAAAAAAAAOI/uYyKnzs5WbY/DU_2.jpg', text:'persp : vincent castell' },
-	RES_DU_3 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUcX94QSI/AAAAAAAAAOM/YRF51I5N-Zc/DU_3.jpg', text:'persp : vincent castell' },
-	RES_DU_4 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUaoLwB9I/AAAAAAAAAN8/8Oe0D-dLLyc/DU_4.jpg', text:'persp : vincent castell' },
-	RES_DU_5 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUbf1yPhI/AAAAAAAAAOA/8PRPP6UTtHI/DU_5.jpg', text:'persp : vincent castell' },
-	RES_KL_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUgMgMiII/AAAAAAAAAOs/3r1amp9ozJw/KL_1.jpg', text:'photo : roland halbe' },
-	RES_KL_2 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUg-qLfrI/AAAAAAAAAOw/8b11W5hxNeQ/KL_2.jpg', text:'photo : roland halbe' },
-	RES_KL_3 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUhF_dzaI/AAAAAAAAAO0/0XAkZOSdRIo/KL_3.jpg', text:'photo : roland halbe' },
-	RES_KL_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzhPxTha2I/AAAAAAAAAQ4/s9kcfqYWH-o/KL_4.jpg', text:'photo : roland halbe' },
-	RES_KL_5 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUh8Z1JeI/AAAAAAAAAO8/qgWAZmwgIS8/KL_5.jpg', text:'photo : roland halbe' },
-	RES_KL_6 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUiaN3JWI/AAAAAAAAAPA/qSA5FDA5PaM/KL_6.jpg', text:'photo : roland halbe' },
-	RES_KL_7 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUiuRvEEI/AAAAAAAAAPE/X2n_M_zBzGw/KL_7.jpg', text:'photo : roland halbe' },
-	RES_KU_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUjAfjB0I/AAAAAAAAAPI/n47OJX6K4Cg/KU_1.jpg', text:'persp : vincent castell' },
-	RES_KU_2 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUjWxavHI/AAAAAAAAAPM/gRKCM9AyEPc/KU_2.jpg', text:'persp : vincent castell' },
-	RES_KU_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUjy1Tw5I/AAAAAAAAAPQ/oDPGB-nKyOA/KU_3.jpg', text:'photo : neil rawson' },
-	RES_KU_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUkz9FiAI/AAAAAAAAAPY/1jvMOWwg5YA/KU_4.jpg', text:'photo : neil rawson' },
-	RES_KU_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUkf0dQVI/AAAAAAAAAPU/nNOBpDZaEbc/KU_5.jpg', text:'photo : neil rawson' },
-	RES_RH_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUYqm-u-I/AAAAAAAAANk/eaaOBeth2DQ/RH_1.jpg', text:'persp : vincent castell' },
-	RES_SH_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUpnFas-I/AAAAAAAAAQE/ZYhLbat9nFE/SH_1.jpg', text:'photo : deidi von schawen' },
-	RES_SH_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUnuMTxFI/AAAAAAAAAPw/GiyXq7nh97s/SH_2.jpg', text:'photo : deidi von schawen' },
-	RES_SH_3 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUoCq8uGI/AAAAAAAAAP0/x0x_jW-qmiw/SH_3.jpg', text:'photo : deidi von schawen' },
-	RES_SH_4 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUod8By8I/AAAAAAAAAP4/MZLydLaBVic/SH_4.jpg', text:'photo : deidi von schawen' },
-	RES_SH_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUoiD4aBI/AAAAAAAAAP8/EghtVyip2rs/SH_5.jpg', text:'photo : deidi von schawen' },
-	RES_SH_6 : { url:'http://lh5.ggpht.com/-U872Kmbmhb4/T0QhIDgMSPI/AAAAAAAAAqA/NCoMcbhEu_U/SH_6.jpg', text:'photo : deidi von schawen' },
-	RET_HR_1 : { url:'http://lh6.ggpht.com/-Jv3bSxwM43o/T0Qak2xCLsI/AAAAAAAAAoI/u8A3pOxygNI/HR_1.jpg' },
-	RET_HR_2 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUeR_5asI/AAAAAAAAAOk/eWXaeIPJ2nE/HR_2.jpg' },
-	RET_SM_1 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUZdiMS7I/AAAAAAAAANs/-5hzIT6eK7c/SM_1.jpg' },
-	RET_SM_2 : { url:'http://lh6.ggpht.com/-VuVqH4EwfQA/T0QbJigfg8I/AAAAAAAAAok/yW7rt8WJf48/SM_2.jpg' },
-	RET_SM_3 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TS4dajJgUAI/AAAAAAAAARY/It8CBXhzVMs/SM_3.jpg' },
-	RET_SM_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TS4dbGBWK-I/AAAAAAAAARc/IJHmPACKj7c/SM_4.jpg' },
-	RET_SM_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TS4dbXx_HoI/AAAAAAAAARg/yuJQsQZ-Erw/SM_5.jpg' }
+	CON : { image:'contact.jpg' },
+	PRO : { image:'profile.jpg', text:'photo : adam von mack' },
+	SPL : { image:'splash.jpg' },
+	HOT_MI_1 : { image:'MI_1.jpg' },
+	HOT_MI_2 : { image:'MI_2.jpg' },
+	HOT_MI_3 : { image:'MI_3.jpg' },
+	HOT_MU_1 : { image:'MU_1.jpg' },
+	HOT_MU_2 : { image:'MU_2.jpg' },
+	HOT_HK_1 : { image:'HK_1.jpg', text:'photo : michel weber' },
+	HOT_HK_2 : { image:'HK_2.jpg', text:'photo : michel weber' },
+	HOT_HK_3 : { image:'HK_3.jpg', text:'photo : michel weber' },
+	HOT_HK_4 : { image:'HK_4.jpg', text:'photo : michel weber' },
+	HOT_HK_5 : { image:'HK_5.jpg', text:'photo : michel weber' },
+	OFF_DO_1 : { image:'DO_1.jpg', text:'persp : vincent castell' },
+	OFF_DO_2 : { image:'DO_2.jpg', text:'persp : vincent castell' },
+	OFF_DO_3 : { image:'DO_3.jpg', text:'persp : vincent castell' },
+	RES_DU_1 : { image:'DU_1.jpg', text:'persp : vincent castell' },
+	RES_DU_2 : { image:'DU_2.jpg', text:'persp : vincent castell' },
+	RES_DU_3 : { image:'DU_3.jpg', text:'persp : vincent castell' },
+	RES_DU_4 : { image:'DU_4.jpg', text:'persp : vincent castell' },
+	RES_DU_5 : { image:'DU_5.jpg', text:'persp : vincent castell' },
+	RES_KL_1 : { image:'KL_1.jpg', text:'photo : roland halbe' },
+	RES_KL_2 : { image:'KL_2.jpg', text:'photo : roland halbe' },
+	RES_KL_3 : { image:'KL_3.jpg', text:'photo : roland halbe' },
+	RES_KL_4 : { image:'KL_4.jpg', text:'photo : roland halbe' },
+	RES_KL_5 : { image:'KL_5.jpg', text:'photo : roland halbe' },
+	RES_KL_6 : { image:'KL_6.jpg', text:'photo : roland halbe' },
+	RES_KL_7 : { image:'KL_7.jpg', text:'photo : roland halbe' },
+	RES_KU_1 : { image:'KU_1.jpg', text:'persp : vincent castell' },
+	RES_KU_2 : { image:'KU_2.jpg', text:'persp : vincent castell' },
+	RES_KU_3 : { image:'KU_3.jpg', text:'photo : neil rawson' },
+	RES_KU_4 : { image:'KU_4.jpg', text:'photo : neil rawson' },
+	RES_KU_5 : { image:'KU_5.jpg', text:'photo : neil rawson' },
+	RES_RH_1 : { image:'RH_1.jpg', text:'persp : vincent castell' },
+	RES_SH_1 : { image:'SH_1.jpg', text:'photo : deidi von schawen' },
+	RES_SH_2 : { image:'SH_2.jpg', text:'photo : deidi von schawen' },
+	RES_SH_3 : { image:'SH_3.jpg', text:'photo : deidi von schawen' },
+	RES_SH_4 : { image:'SH_4.jpg', text:'photo : deidi von schawen' },
+	RES_SH_5 : { image:'SH_5.jpg', text:'photo : deidi von schawen' },
+	RES_SH_6 : { image:'SH_6.jpg', text:'photo : deidi von schawen' },
+	RET_HR_1 : { image:'HR_1.jpg' },
+	RET_HR_2 : { image:'HR_2.jpg' },
+	RET_SM_1 : { image:'SM_1.jpg' },
+	RET_SM_2 : { image:'SM_2.jpg' },
+	RET_SM_3 : { image:'SM_3.jpg' },
+	RET_SM_4 : { image:'SM_4.jpg' },
+	RET_SM_5 : { image:'SM_5.jpg' }
 }
 
 App.Texts = {
@@ -366,7 +360,7 @@ var LoadPicture = function(pictContainer, pictText, pictureID) {
 		pictContainer.fadeOut(function() {
 			var e = $(this);
 			if (null != newPicture) {
-				e.css('background-image', 'url("'+newPicture.url+'")');
+				e.css('background-image', 'url("./images/'+newPicture.image+'")');
 			}
 			else {
 				e.css('background-image', '');
@@ -476,8 +470,6 @@ var ChangeLanguage = function(lang) {
 $(function() {
 	LoadSection('SPL', false);
 });
-
-// ]]>
 	</script>
 </body>
 </html>
