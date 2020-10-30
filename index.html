@@ -1,0 +1,483 @@
+
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='Romain Lods' name='author'/>
+<meta content='neil rawson architecture interiors design' name='description'/>
+<meta content='neil,rawson,neil rawson,architecture,interiors,design,paris' name='keywords'/>
+<meta content='en' name='language'/>
+<meta content='width=device-width, initial-scale=0.5, user-scalable=yes' name='viewport'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<title>neil rawson</title>
+<link href='./favicon.png' rel='icon' type='image/png'/>
+<style type='text/css'>
+/* Reset */
+html, body, div, span, form, iframe, object, nav, header, footer,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, label, caption,
+table, thead, tbody, tfoot, th, tr, td,
+ul, ol,
+img, a {
+	border:0;
+	margin:0;
+	outline:0;
+	padding:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	vertical-align:baseline;
+}		
+ul { list-style-type:none; }
+table { border-collapse:separate; border-spacing:0; }
+a, a:link, a:visited, a:hover, a:active { text-decoration:none; }
+
+/* Content */
+body {
+	overflow:hidden; /* no scrollbar */
+	font-family:Arial,Verdana,Helvetica,sans-serif; 
+	font-style:normal;
+	font-weight:normal;
+}
+
+/* Position */
+#root { position:absolute; top:50%; left:50%; }
+
+/* Dimension */
+#lang { display:block; text-align:right; }
+#lang li { display:inline; }
+#root { min-height:400px; margin-top:-200px; width:600px; margin-left:-300px; }
+#pict { width:320px; height:280px; }
+#pictLarge { width:600px; height:280px; }
+#head .c1 { width:325px; height:20px; }
+#head .c2 { width:275px; height:20px; }
+#bodyI td { width:600px; height:320px; vertical-align:top; padding:10px 0 10px 0; }
+#bodyT .c1 { width:325px; height:320px; vertical-align:top; padding:10px 0 10px 0; }
+#bodyT .c2 { width:275px; height:320px; vertical-align:top; padding:10px 0 10px 0; }
+#foot .c1 { width:33%; vertical-align:top; }
+#foot .c2 { width:33%; vertical-align:top; }
+#foot .c3 { width:33%; vertical-align:top; }
+#foot a { padding-left:0.2em; }
+.ptext { display:inline-block; margin-left: 5px; }
+.pmenu { display:inline-block; float: right; }
+.pmenu li { display:inline; text-align:right; margin-right: 5px; }
+.t1 { width:600px; height:300px; }
+.t2 { width:600px; }
+
+/* Text */
+.body { font-size:11px; line-height:14px; }
+#lang { font-size:10px; }
+#head { font-size:14px; line-height:25px; }
+#foot { font-size:10px; }
+#foot li { line-height:18px; }
+#title { font-size:14px; text-align:right; }
+#text  { font-size:11px; text-align:justify; padding-left: 10px; }
+#text li { list-style-type:disc; margin-left:15px; }
+
+/* Colors */
+body { color:#7C6D63; }
+a:link, a:visited { color:#A39E8C; }
+a:hover, a:active { color:#7C6D63; }
+a.cur { color:#7C6D63; }
+.pict { background-color: transparent; background-position: center center; background-repeat: no-repeat; }
+.ptext { color:#A39E8C; }
+span.ref { font-weight:bold; }
+#title { color:#A39E8C; }
+#lang li.en a { color:#d99ac1; }
+#lang li.fr a { color:#9bdef3; }
+
+/* ... */
+#rolographic {position:absolute;bottom:1em;right:1em;opacity:0.1;-webkit-transition-delay:0s;-webkit-transition-duration:0.25s;-webkit-transition-property:all;-webkit-transition-timing-function:linear;}
+#rolographic:hover {opacity:1;}
+	</style>
+</head>
+<body>
+<div class='navbar no-items section' id='navbar'></div>
+<div id='root'>
+<table class='t1'>
+<tr id='head'>
+<td class='c1'>
+<p>neil rawson <a href='/'>architectureinteriorsdesign</a> paris france</p>
+</td>
+<td class='c2'>
+<p id='title'></p>
+</td>
+</tr>
+<tr class='body' id='bodyI'>
+<td colspan='2'>
+<img class='pict' id='pictLarge' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='/>
+<span class='ptext' id='ptextLarge'></span>
+<ul class='pmenu' id='pmenuLarge'></ul>
+</td>
+</tr>
+<tr class='body' id='bodyT' style='display:none'>
+<td class='c1'>
+<img class='pict' id='pict' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='/>
+<span class='ptext' id='ptext'></span>
+<ul class='pmenu' id='pmenu'></ul>
+</td>
+<td class='c2'>
+<p id='text'></p>
+</td>
+</tr>
+<tr id='foot'>
+<td colspan='2'>
+<table class='t2'>
+<tr>
+<td class='c1'><ul class='menu' id='menu1'></ul></td>
+<td class='c2'><ul class='menu' id='menu2'></ul></td>
+<td class='c3'><ul class='menu' id='menu3'></ul></td>
+</tr>
+</table>
+<ul id='lang'>
+<li class='en'><a href='#' onclick='ChangeLanguage("en")'>en</a></li>
+<li class='fr'><a href='#' onclick='ChangeLanguage("fr")'>fr</a></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div id='rolographic' title='developped by rolographic'><img src='./rolographic.png'/></div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+// <![CDATA[
+
+// <link type="text/css" rel="stylesheet" href="base.css">
+// <link type="text/css" rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+// <link type="text/css" rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+
+var App = {}
+
+App.CurrentLang = 'en';
+App.CurrentPictureID = null;
+App.CurrentSectionID = null;
+
+App.Languages = ['en','fr'];
+
+App.Menus = {
+	menu1: { elementID:'#menu1', currentChildLink:null, currentSection:null },
+	menu2: { elementID:'#menu2', currentChildLink:null, currentSection:null },
+	menu3: { elementID:'#menu3', currentChildLink:null, currentSection:null }
+}
+
+App.Pictures = {
+	CON : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUX60QUII/AAAAAAAAANc/Em6hk66AVQ8/contact.jpg' },
+	PRO : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TZt0DgjB_MI/AAAAAAAAAS8/dk51mMmaiL8/profile.jpg', text:'photo : adam von mack' },
+	SPL : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUXZcRZbI/AAAAAAAAANY/0B2KlB4Mb0U/splash.jpg' },
+	HOT_MI_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSze2y-AXeI/AAAAAAAAAQs/mMH9JSowXxA/MI_1.jpg' },
+	HOT_MI_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSze2txvqqI/AAAAAAAAAQo/re-FgNvwVKs/MI_2.jpg' },
+	HOT_MI_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSze3bsFjUI/AAAAAAAAAQw/9zX19uuRvsc/MI_3.jpg' },
+	HOT_MU_1 : { url:'http://lh4.ggpht.com/-tGjRdk0SLRc/T0QglU2STjI/AAAAAAAAApg/zV1V5fFCAdo/MU_1.jpg' },
+	HOT_MU_2 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUnSEb3AI/AAAAAAAAAPs/0StO5c-5F44/MU_2.jpg' },
+	HOT_HK_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSziz-xA81I/AAAAAAAAARI/yOfkguz3-n0/HK_1.jpg', text:'photo : michel weber' },
+	HOT_HK_2 : { url:'http://lh6.ggpht.com/-sdnU3P23tGM/T0QgOQr8opI/AAAAAAAAApE/UdBTjNBq8aI/HK_2.jpg', text:'photo : michel weber' },
+	HOT_HK_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSziCWOhEAI/AAAAAAAAARA/xsYTAjDm8pA/HK_3.jpg', text:'photo : michel weber' },
+	HOT_HK_4 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUeLb_DuI/AAAAAAAAAOg/2YN3Krmxa94/HK_4.jpg', text:'photo : michel weber' },
+	HOT_HK_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUcveMRFI/AAAAAAAAAOQ/KIFJX7oTpDo/HK_5.jpg', text:'photo : michel weber' },
+	OFF_DO_1 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUaesA8FI/AAAAAAAAAN4/HNSj3OnfmYs/DO_1.jpg', text:'persp : vincent castell' },
+	OFF_DO_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUZjLvVQI/AAAAAAAAANw/gKCJklrhssA/DO_2.jpg', text:'persp : vincent castell' },
+	OFF_DO_3 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUaF8r_9I/AAAAAAAAAN0/B11IqmveXmA/DO_3.jpg', text:'persp : vincent castell' },
+	RES_DU_1 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUblAwjeI/AAAAAAAAAOE/7AuXTixyUaw/DU_1.jpg', text:'persp : vincent castell' },
+	RES_DU_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUbypKgwI/AAAAAAAAAOI/uYyKnzs5WbY/DU_2.jpg', text:'persp : vincent castell' },
+	RES_DU_3 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUcX94QSI/AAAAAAAAAOM/YRF51I5N-Zc/DU_3.jpg', text:'persp : vincent castell' },
+	RES_DU_4 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUaoLwB9I/AAAAAAAAAN8/8Oe0D-dLLyc/DU_4.jpg', text:'persp : vincent castell' },
+	RES_DU_5 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUbf1yPhI/AAAAAAAAAOA/8PRPP6UTtHI/DU_5.jpg', text:'persp : vincent castell' },
+	RES_KL_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUgMgMiII/AAAAAAAAAOs/3r1amp9ozJw/KL_1.jpg', text:'photo : roland halbe' },
+	RES_KL_2 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUg-qLfrI/AAAAAAAAAOw/8b11W5hxNeQ/KL_2.jpg', text:'photo : roland halbe' },
+	RES_KL_3 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUhF_dzaI/AAAAAAAAAO0/0XAkZOSdRIo/KL_3.jpg', text:'photo : roland halbe' },
+	RES_KL_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzhPxTha2I/AAAAAAAAAQ4/s9kcfqYWH-o/KL_4.jpg', text:'photo : roland halbe' },
+	RES_KL_5 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUh8Z1JeI/AAAAAAAAAO8/qgWAZmwgIS8/KL_5.jpg', text:'photo : roland halbe' },
+	RES_KL_6 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUiaN3JWI/AAAAAAAAAPA/qSA5FDA5PaM/KL_6.jpg', text:'photo : roland halbe' },
+	RES_KL_7 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUiuRvEEI/AAAAAAAAAPE/X2n_M_zBzGw/KL_7.jpg', text:'photo : roland halbe' },
+	RES_KU_1 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUjAfjB0I/AAAAAAAAAPI/n47OJX6K4Cg/KU_1.jpg', text:'persp : vincent castell' },
+	RES_KU_2 : { url:'http://lh4.ggpht.com/_kiF14rofrPU/TSzUjWxavHI/AAAAAAAAAPM/gRKCM9AyEPc/KU_2.jpg', text:'persp : vincent castell' },
+	RES_KU_3 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUjy1Tw5I/AAAAAAAAAPQ/oDPGB-nKyOA/KU_3.jpg', text:'photo : neil rawson' },
+	RES_KU_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUkz9FiAI/AAAAAAAAAPY/1jvMOWwg5YA/KU_4.jpg', text:'photo : neil rawson' },
+	RES_KU_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUkf0dQVI/AAAAAAAAAPU/nNOBpDZaEbc/KU_5.jpg', text:'photo : neil rawson' },
+	RES_RH_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUYqm-u-I/AAAAAAAAANk/eaaOBeth2DQ/RH_1.jpg', text:'persp : vincent castell' },
+	RES_SH_1 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUpnFas-I/AAAAAAAAAQE/ZYhLbat9nFE/SH_1.jpg', text:'photo : deidi von schawen' },
+	RES_SH_2 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUnuMTxFI/AAAAAAAAAPw/GiyXq7nh97s/SH_2.jpg', text:'photo : deidi von schawen' },
+	RES_SH_3 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TSzUoCq8uGI/AAAAAAAAAP0/x0x_jW-qmiw/SH_3.jpg', text:'photo : deidi von schawen' },
+	RES_SH_4 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUod8By8I/AAAAAAAAAP4/MZLydLaBVic/SH_4.jpg', text:'photo : deidi von schawen' },
+	RES_SH_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUoiD4aBI/AAAAAAAAAP8/EghtVyip2rs/SH_5.jpg', text:'photo : deidi von schawen' },
+	RES_SH_6 : { url:'http://lh5.ggpht.com/-U872Kmbmhb4/T0QhIDgMSPI/AAAAAAAAAqA/NCoMcbhEu_U/SH_6.jpg', text:'photo : deidi von schawen' },
+	RET_HR_1 : { url:'http://lh6.ggpht.com/-Jv3bSxwM43o/T0Qak2xCLsI/AAAAAAAAAoI/u8A3pOxygNI/HR_1.jpg' },
+	RET_HR_2 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TSzUeR_5asI/AAAAAAAAAOk/eWXaeIPJ2nE/HR_2.jpg' },
+	RET_SM_1 : { url:'http://lh6.ggpht.com/_kiF14rofrPU/TSzUZdiMS7I/AAAAAAAAANs/-5hzIT6eK7c/SM_1.jpg' },
+	RET_SM_2 : { url:'http://lh6.ggpht.com/-VuVqH4EwfQA/T0QbJigfg8I/AAAAAAAAAok/yW7rt8WJf48/SM_2.jpg' },
+	RET_SM_3 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TS4dajJgUAI/AAAAAAAAARY/It8CBXhzVMs/SM_3.jpg' },
+	RET_SM_4 : { url:'http://lh5.ggpht.com/_kiF14rofrPU/TS4dbGBWK-I/AAAAAAAAARc/IJHmPACKj7c/SM_4.jpg' },
+	RET_SM_5 : { url:'http://lh3.ggpht.com/_kiF14rofrPU/TS4dbXx_HoI/AAAAAAAAARg/yuJQsQZ-Erw/SM_5.jpg' }
+}
+
+App.Texts = {
+	en: {
+		SPL_ttl:'.',
+		SPL_txt:null,
+		CON_ttl:'contact',
+		CON_txt:'<p>paris / france</p><br/><a class="mail" href="mailto:info@neilrawson.com">info@neilrawson.com</a>',
+		PRJ_ttl:'projects',
+		PRJ_txt:null,
+		PRO_ttl:'profile',
+		PRO_txt:'<p><span class="ref">ba hons, dip arch kingst, arb, riba</span></p><br/><p>neil studied at <span class="ref">notthingham trent university</span> where he undertook a foundation course in art + design then went on to study architecture at <span class="ref">kingston university london</span>.</p><br/><p>working as an architect, he has spent time in the following offices: <span class="ref">dominique perrault</span>, <span class="ref">renzo piano</span>, <span class="ref">jean nouvel</span>, <span class="ref">nicholas grimshaw</span> and <span class="ref">will alsop</span>.</p><br/><p>on returning to paris, he began working with designers and interior designers, more specifically with <span class="ref">philippe starck</span>, <span class="ref">patrick jouin</span> and <span class="ref">andr&eacute;e putman</span> for whom he became studio director.</p><br/><p>these experiences have led him to a specialisation in the world of contemporary interior design with projects having been realised throughout the world.</p>',
+		HOT_ttl:'hotel',
+		HOT_txt:'',
+		RES_ttl:'residential',
+		RES_txt:'',
+		RET_ttl:'retail',
+		RET_txt:'',
+		OFF_ttl:'office',
+		OFF_txt:'',
+		HOT_BA_ttl:'buenos aires faena hotel + universe',
+		HOT_BA_txt:'...',
+		HOT_MI_ttl:'ICON miami',
+		HOT_MI_txt:'<p>with the agence <span class="ref">philippe starck</span>.</p><br/><p>a residential complex comprising of:</p><ul><li>40 floors</li><li>239 units</li></ul><br/><p>design of lobby spaces pool areas, spa, gym, waiting areas, restaurants and flat types.</p>',
+		HOT_MU_ttl:'munich bayerischer hof',
+		HOT_MU_txt:'<p>the bayerischer hof is a privately owned hotel in the center of munich germany.</p><br/><p>the project consists of:<ul><li>spa and wellness centre on the rooftop of the hotel</li><li>swimming pool with a retractable glass roof</li><li>bar + sun deck</li></ul>',
+		HOT_HK_ttl:'honk kong rivage hotel',
+		HOT_HK_txt:'<p>with the agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>the rivage, comprises 50 one-bedroom suites.</p><p>located close to the sheung wan harborfront,</p><p>the hotel has unobstructed harbor views in each room and a terrace and cafe located on the top floor.</p>',
+		RES_DU_ttl:'hiliana residences tower dubai',
+		RES_DU_txt:'<p>with the agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>the 45-floor tower overlooks the arabian sea.</p><p>the residence has the following accommodation:</p><ul><li>30 one-bedroom apartments</li><li>69 two-bedroom apartments</li><li>9 three-bedroom apartments</li><li>10 penthouse suites</li><li>restaurant, pool, poolside juice bar and fitness area</li></ul>',
+		RES_KL_ttl:'private house kuala lumpur',
+		RES_KL_txt:'<p>with the agence <span class="ref">jouin manku</span>.</p><br/><p>a 3,500m&#178; house, situated in an affluent suburb of kuala lumpur, comprising of:</p><ul><li>9 bedrooms</li><li>2 family rooms</li><li>family kitchen and private dining</li><li>library and games room</li><li>swimming pool</li><li>dining room</li><li>reception area</li><li>guest suites</li><li>private chapel</li></ul>',
+		RES_KU_ttl:'private house kuwait',
+		RES_KU_txt:'<p>with the agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>a 1,800m&#178; house situated in kuwait city comprising of:</p><ul><li>2 lounges</li><li>3 bedrooms</li><li>dining area</li><li>study</li><li>guest quarters</li><li>external court</li><li>diwanya</li></ul>',
+		RES_SH_ttl:'penthouse flat shanghai',
+		RES_SH_txt:'<p>with the agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>penthouse flat on 2 levels in the french concession comprising of:</p><ul><li>living and dining area</li><li>master kitchen</li><li>master bedroom with bathroom + dressing room</li><li>2 guest bedrooms and bathrooms</li><li>terrace</li><li>servants quarters</li></ul>',
+		RES_RH_ttl:'roof house study',
+		RES_RH_txt:'<p>a 300m&#178; naturally ventilated house comprising of:</p><ul><li>3 bedrooms</li><li>living/dining space</li><li>pool area</li></ul><br/><p>glass walls disappear to allow the garden into the house and the house to the garden.</p>',
+		RET_HR_ttl:'helena rubinstein',
+		RET_HR_txt:'<p>concept of new corners/stands for the brand <span class="ref">helena rubinstein</span>.</p>',
+		RET_SM_ttl:'sigerson morrison',
+		RET_SM_txt:'<p>additions to existing stand for shoe designers <span class="ref">sigerson morrison</span> incorporating 2 shoe lines and accessories.</p>',
+		OFF_DO_ttl:'executive offices doha',
+		OFF_DO_txt:'<p>with the agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>the 1,000m&#178; office level situated at the top of the tornado tower overlooking the bay was comprised of:</p><ul><li>4 offices with reception areas</li><li>dining and conference rooms</li><li>exhibition space</li></ul>'
+	},
+	fr: {
+		SPL_ttl:'.',
+		SPL_txt:null,
+		CON_ttl:'contact',
+		CON_txt:'<p>paris / france</p><br/><a class="mail" href="mailto:info@neilrawson.com">info@neilrawson.com</a>',
+		PRJ_ttl:'projets',
+		PRJ_txt:null,
+		PRO_ttl:'profil',
+		PRO_txt:'<p><span class="ref">ba hons, dip arch kingst, arb, riba</span></p><br/><p>neil a &eacute;tudi&eacute; &agrave; <span class="ref">l&apos;universit&eacute; trent de notthingham</span> o&ugrave; il a suivi un cursus art + design avant d&apos;&eacute;tudier l&apos;architecture &agrave; <span class="ref">l&apos;universit&eacute; de kingston &agrave; londres</span>.</p><br/><p>au travers de son travail d&apos;architecte, il est intervenu dans les agences de <span class="ref">dominique perrault</span>, <span class="ref">renzo piano</span>, <span class="ref">jean nouvel</span>, <span class="ref">nicholas grimshaw</span> et <span class="ref">will alsop</span>.</p><br/><p>&agrave; son retour &agrave; paris, il a travaill&eacute; avec des designers et des architectes d&apos;int&eacute;rieur, plus pr&eacute;cis&eacute;ment avec <span class="ref">philippe starck</span>, <span class="ref">patrick jouin</span> et <span class="ref">andr&eacute;e putman</span> dont il est devenu le directeur d&apos;agence.</p><br/><p>ces exp&eacute;riences l&apos;ont conduit &agrave; une sp&eacute;cialisation dans le monde du design d&apos;int&eacute;rieur contemporain avec des projets r&eacute;alis&eacute;s dans le monde entier.</p>',
+		HOT_ttl:'hotel',
+		HOT_txt:'',
+		RES_ttl:'habitation',
+		RES_txt:'',
+		RET_ttl:'magasin',
+		RET_txt:'',
+		OFF_ttl:'bureau',
+		OFF_txt:'',
+		HOT_BA_ttl:'buenos aires faena hotel + universe',
+		HOT_BA_txt:'...',
+		HOT_MI_ttl:'ICON miami',
+		HOT_MI_txt:'<p>avec l&rsquo;agence <span class="ref">philippe starck</span>.</p><br/><p>un complexe r&eacute;sidentiel compos&eacute; de:</p><ul><li>40 &eacute;tages</li><li>239 appartements</li></ul><br/><p>conception des espaces lobby, piscine, spa, salle de gym, salles d&rsquo;attentes et de restaurants.</p>',
+		HOT_MU_ttl:'munich bayerischer hof',
+		HOT_MU_txt:'<p>le bayerischer hof est l&rsquo;un des h&ocirc;tels les plus prestigieux du centre de munich.</p><br/><p>le projet consiste en:<ul><li>la cr&eacute;tion d&rsquo;un spa et du centre de bien-&ecirc;tre sur le toit de l&rsquo;h&ocirc;</li><li>piscine avec un toit de verre r&eacute;tractable</li><li>bar + terrasse</li></ul>',
+		HOT_HK_ttl:'honk kong rivage hotel',
+		HOT_HK_txt:'<p>avec l&rsquo;agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>le rivage comprend 50 suites.</p><p>situ&eacute; &agrave; proximit&eacute; du front de mer sheung wan,</p><p>chaque chambre de l&rsquo;h&ocirc;tel b&eacute;n&eacute;ficie d&rsquo;une vue imprenable sur le port.</p>',
+		RES_DU_ttl:'tours d&rsquo;habitation hiliana &agrave; dubai',
+		RES_DU_txt:'<p>avec l&rsquo;agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>une tour de 45 &eacute;tages surplombant la mer d&rsquo;oman.</p><p>la r&eacute;sidence comprend les &eacute;quipements suivant:</p><ul><li>30 studios</li><li>69 deux-pi&egrave;ces</li><li>9 trois-pi&egrave;ces</li><li>10 suites penthouse</li><li>restaurant, piscine, bar à jus au niveau de la piscine et salle de fitness</li></ul>',
+		RES_KL_ttl:'maison priv&eacute;e kuala lumpur',
+		RES_KL_txt:'<p>avec l&rsquo;agence <span class="ref">jouin manku</span>.</p><br/><p>une maison de 3,500m&#178;, situ&eacute;e &agrave; proximit&eacute; de kuala lumpur, comprenant:</p><ul><li>9 chambres</li><li>2 suites familiales</li><li>cuisine familiale et salle &agrave; manger priv&eacute;e</li><li>biblioth&egrave;que et salle de jeux</li><li>piscine</li><li>salle &agrave; manger</li><li>r&eacute;ception</li><li>suites</li><li>chapelle priv&eacute;e</li></ul>',
+		RES_KU_ttl:'maison priv&eacute;e kowait city',
+		RES_KU_txt:'<p>avec l&rsquo;agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>une maison de 1,800m&#178;, situ&eacute;e dans kowait city, comprenant:</p><ul><li>2 salons</li><li>3 chambres</li><li>salle &agrave; manger</li><li>bureau</li><li>suites d&rsquo;invit&eacute;s</li><li>cours ext&eacute;rieure</li><li>diwanya</li></ul>',
+		RES_SH_ttl:'appartement penthouse &agrave; shanghai',
+		RES_SH_txt:'<p>avec l&rsquo;agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>penthouse sur 2 niveaux dans la concession fran&ccedil;aise se composant de:</p><ul><li>s&eacute;jour et salle &agrave; manger</li><li>cuisine principale</li><li>chambre principale avec salle de bains + dressing</li><li>2 chambres d&rsquo;nvit&eacute;s et salles de bains</li><li>terrassee</li></ul>',
+		RES_RH_ttl:'&eacute;tude de maison toit',
+		RES_RH_txt:'<p>une maison de 300m&#178; compos&eacute;e de:</p><ul><li>3 chambres</li><li>s&eacute;jour / salle &agrave; manger</li><li>piscine</li></ul><br/><p>parois de verre permettant une interaction totale entre le jardin et la maison.</p>',
+		RET_HR_ttl:'helena rubinstein',
+		RET_HR_txt:'<p>concept de nouveaux corners pour la marque <span class="ref">helena rubinstein</span>.</p>',
+		RET_SM_ttl:'sigerson morrison',
+		RET_SM_txt:'<p>additions aux stands existants de chaussures des designers <span class="ref">sigerson morrison</span> int&eacute;grants 2 lignes de chaussures et accessoires.</p>',
+		OFF_DO_ttl:'bureaux &agrave; doha',
+		OFF_DO_txt:'<p>avec l&rsquo;agence <span class="ref">andr&eacute;e putman</span>.</p><br/><p>cr&eacute;ation + am&eacute;nagement du nouvel espace de 1,000m&#178; de bureaux situ&eacute; au sommet d&rsquo;une tour surplombant la baie:</p><ul><li>4 bureaux avec des zones de r&eacute;ception</li><li>salles &agrave; manger et salles de conf&eacute;rence</li><li>espace d&rsquo;exposition</li></ul>'
+	}
+}
+
+App.Sections = {
+	SPL: { children:['PRJ','PRO','CON'], pictures:['SPL'] },
+	CON: { parent:'SPL', pictures:['CON'] },
+	PRO: { parent:'SPL', pictures:['PRO'] },
+	PRJ: { parent:'SPL', children:['RES','HOT','RET','OFF'], pictures:['SPL'] },
+	HOT: { parent:'PRJ', children:['HOT_HK','HOT_MI','HOT_MU','HOT_BA'], pictures:['HOT_HK_2'] },
+	RES: { parent:'PRJ', children:['RES_DU','RES_KL','RES_KU','RES_SH','RES_RH'], pictures:['RES_DU_1'] },
+	RET: { parent:'PRJ', children:['RET_SM','RET_HR'], pictures:['RET_HR_1'] },
+	OFF: { parent:'PRJ', children:['OFF_DO'], pictures:['OFF_DO_1'] },
+	HOT_BA: { parent:'HOT' },
+	HOT_MI: { parent:'HOT', pictures:['HOT_MI_1','HOT_MI_2','HOT_MI_3'] },
+	HOT_MU: { parent:'HOT', pictures:['HOT_MU_2','HOT_MU_1'] },
+	HOT_HK: { parent:'HOT', pictures:['HOT_HK_2','HOT_HK_3','HOT_HK_4','HOT_HK_1','HOT_HK_5'] },
+	RES_DU: { parent:'RES', pictures:['RES_DU_1','RES_DU_2','RES_DU_3','RES_DU_4','RES_DU_5'] },
+	RES_KL: { parent:'RES', pictures:['RES_KL_1','RES_KL_2','RES_KL_3','RES_KL_4','RES_KL_5','RES_KL_6','RES_KL_7'] },
+	RES_KU: { parent:'RES', pictures:['RES_KU_1','RES_KU_2','RES_KU_3','RES_KU_4','RES_KU_5'] },
+	RES_SH: { parent:'RES', pictures:['RES_SH_1','RES_SH_2','RES_SH_3','RES_SH_4','RES_SH_5','RES_SH_6'] },
+	RES_RH: { parent:'RES', pictures:['RES_RH_1'] },
+	RET_HR: { parent:'RET', pictures:['RET_HR_1','RET_HR_2'] },
+	RET_SM: { parent:'RET', pictures:['RET_SM_2','RET_SM_1'] },
+	OFF_DO: { parent:'OFF', pictures:['OFF_DO_1','OFF_DO_2','OFF_DO_3'] }
+}
+
+var GetText = function(sectionID) {
+	return App.Texts[App.CurrentLang][sectionID+'_txt'];
+}
+
+var GetTitle = function(sectionID) {
+	return App.Texts[App.CurrentLang][sectionID+'_ttl'];
+}
+
+var LoadMenu = function(section, menuID, forced) {
+	var menu = App.Menus[menuID];
+	var oldSection = menu.currentSection;
+	if (oldSection != section || forced) {
+		menu.currentSection = section;
+		menu.currentChildLink = null;
+		$(menu.elementID).fadeOut(function() {
+			var e = $(this);
+			e.html('');
+			if (null != section && null != section.children && section.children.length > 0) {
+				for (var sectionIdx = 0; sectionIdx < section.children.length; ++sectionIdx) {
+					var childID = section.children[sectionIdx];
+					var a = $('<a />');
+					var li = $('<li/>');
+					a.html(GetTitle(childID));
+					a.bind('click', { childID:childID, menu:menu }, function(e) {
+						var menu = e.data.menu;
+						if (null != menu.currentChildLink) menu.currentChildLink.removeClass('cur');
+						menu.currentChildLink = $(this);
+						menu.currentChildLink.addClass('cur');
+						LoadSection(e.data.childID, false);
+					});
+					a.attr('href', '#');
+					a.appendTo(li);
+					li.appendTo(e);
+				}
+			}
+			e.fadeIn();
+		});
+	}
+}
+
+var LoadPicture = function(pictContainer, pictText, pictureID) {
+	if (null != pictureID && App.CurrentPictureID != pictureID) {
+		App.CurrentPictureID = pictureID;
+		var newPicture = App.Pictures[pictureID];
+		pictContainer.fadeOut(function() {
+			var e = $(this);
+			if (null != newPicture) {
+				e.css('background-image', 'url("'+newPicture.url+'")');
+			}
+			else {
+				e.css('background-image', '');
+			}
+			e.fadeIn();
+		});
+		pictText.fadeOut(function() {
+			var e = $(this);
+			if (null != newPicture && null != newPicture.text) {
+				e.html(newPicture.text);
+			}
+			else {
+				e.html(' ');
+			}
+			e.fadeIn();
+		});
+	}
+}
+
+var LoadSection = function(sectionID, forced) {
+	if (null != sectionID && (App.CurrentSectionID != sectionID || forced)) {
+		App.CurrentSectionID = sectionID;
+		var section = App.Sections[sectionID];
+		var text = GetText(sectionID);
+		var title = GetTitle(sectionID);
+		var pictContainer = null;
+		var pictMenu = null;
+		var pictText = null;
+		if (null != text) {
+			pictContainer = $('#pict');
+			pictMenu = $('#pmenu');
+			pictText = $('#ptext');
+		}
+		else {
+			pictContainer = $('#pictLarge');
+			pictMenu = $('#pmenuLarge');
+			pictText = $('#ptextLarge');
+		}
+
+		// Load Section Menus
+		var sections = [];
+		var s = section;
+		while (null != s) { sections.unshift(s); s = App.Sections[s.parent]; }
+		var menuIdx = 1;
+		for (var sectionIdx = 0; sectionIdx < sections.length && menuIdx < 4; ++sectionIdx, ++menuIdx) { LoadMenu(sections[sectionIdx], 'menu'+menuIdx, forced); }
+		for (; menuIdx < 4; ++menuIdx) { LoadMenu(null, 'menu'+menuIdx, forced); }		
+		
+		// Load Section Pictures
+		pictMenu.fadeOut(function() {
+			var e = $(this);
+			e.html('');
+			if (null != section && null != section.pictures && section.pictures.length > 1) {
+				for (var imageIdx = 0; imageIdx < section.pictures.length; ++imageIdx) {
+					var a = $('<a />');
+					var li = $('<li/>');
+					a.html(imageIdx+1);
+					a.bind('click', { pictureID:section.pictures[imageIdx] }, function(e) { LoadPicture(pictContainer, pictText, e.data.pictureID); });
+					a.attr('href', '#');
+					a.appendTo(li);
+					li.appendTo(e);
+				}
+			}
+			e.fadeIn();
+		});
+		if (null != section.pictures && section.pictures.length > 0) {
+			LoadPicture(pictContainer, pictText, section.pictures[0]);
+		}
+		else {
+			LoadPicture(pictContainer, pictText, null);
+		}
+
+		// Load Section Texts
+		$('#title').fadeOut(function() {
+			var e = $(this);
+			if (null != title) {
+				e.html(title);
+			}
+			else {
+				e.html('');
+			}
+			e.fadeIn();
+		});
+		$('#text').fadeOut(function() {
+			var e = $(this);
+			if (null != text) {
+				$('#bodyI').hide();
+				$('#bodyT').show();			
+				e.html(text);
+			}
+			else {
+				$('#bodyT').hide();
+				$('#bodyI').show();
+				e.html('');
+			}
+			e.fadeIn();
+		});
+	}
+}
+
+var ChangeLanguage = function(lang) {
+	if (null != lang) {
+		App.CurrentLang = lang;
+		LoadSection(App.CurrentSectionID, true);
+	}
+}
+
+$(function() {
+	LoadSection('SPL', false);
+});
+
+// ]]>
+	</script>
+</body>
+</html>
